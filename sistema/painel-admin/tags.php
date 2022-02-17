@@ -40,6 +40,9 @@ require_once("verificar.php");
 		</small>
 
 
+
+
+
 		<!-- Modal -->
 		<div class="modal fade" id="cadastro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
@@ -120,6 +123,10 @@ require_once("verificar.php");
 		</div>
 
 
+
+
+
+
 		<?php 
 		if(@$_GET['funcao'] == 'novo'){ ?>
 			<script type="text/javascript">
@@ -156,6 +163,8 @@ require_once("verificar.php");
 		<?php } ?>
 
 
+
+
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('#example').DataTable({
@@ -163,6 +172,8 @@ require_once("verificar.php");
 				});
 			} );
 		</script>
+
+
 
 
 		<!-- Ajax para inserir ou editar dados -->
@@ -183,6 +194,8 @@ require_once("verificar.php");
 
 						if (mensagem.trim() == "Salvo com Sucesso!") {
 
+                    //$('#nome').val('');
+                    //$('#cpf').val('');
                     $('#btn-fechar').click();
                     window.location = "index.php?pag="+pag;
 
